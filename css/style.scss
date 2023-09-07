@@ -1,0 +1,39 @@
+header {
+    background-color: #f0efe9;
+    padding: 16px;
+
+
+    .container {
+        display: flex;
+        gap: 70px;
+        align-items: center;
+        justify-content: space-between;
+        
+        .menu-bars {
+            border: none;
+            font-size: 25px;
+            background-color: transparent;
+
+            @media (min-width: 992px) {
+                display: none;
+            }
+        }
+
+        .menu {
+            display: none;
+
+            @media (min-width: 992px) {
+                display: block;
+            }
+
+            .top-menu {
+                display: flex;
+                justify-content: space-between;
+
+                border: 1px solid black;
+            }
+        }
+
+
+    }
+}
