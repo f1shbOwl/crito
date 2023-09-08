@@ -63,13 +63,23 @@ header {
             .top-menu {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: flex-end;
                 padding-bottom: 10px;
                 border-bottom: 1px solid #DAD9D3;
+                
+                @media (min-width: 1200px) {
+                    justify-content: space-between;
+                    display: block;
+                }
 
                 .contact-information {
-                    display: flex;
+                    display: none;
                     align-items: center;
+
+                    @media (min-width: 1200px) {
+                        display: flex;
+                        
+                    }
 
                     .contact-box {
                         padding-right: 30px;

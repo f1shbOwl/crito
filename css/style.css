@@ -58,13 +58,24 @@ header .container .menu {
 header .container .menu .top-menu {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding-bottom: 10px;
   border-bottom: 1px solid #DAD9D3;
 }
+@media (min-width: 1200px) {
+  header .container .menu .top-menu {
+    justify-content: space-between;
+    display: block;
+  }
+}
 header .container .menu .top-menu .contact-information {
-  display: flex;
+  display: none;
   align-items: center;
+}
+@media (min-width: 1200px) {
+  header .container .menu .top-menu .contact-information {
+    display: flex;
+  }
 }
 header .container .menu .top-menu .contact-information .contact-box {
   padding-right: 30px;
