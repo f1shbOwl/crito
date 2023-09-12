@@ -155,6 +155,9 @@ header .container .menu .main-menu .btn-login {
 
 .showcase {
   background-color: #F0EFE9;
+  background-image: url("/assets/image-linestwo.svg");
+  background-repeat: no-repeat;
+  background-position: -2% 102%;
 }
 .showcase .container {
   display: flex;
@@ -219,4 +222,59 @@ header .container .menu .main-menu .btn-login {
   .showcase .container img {
     display: block;
   }
+}
+
+.companies {
+  display: none;
+}
+@media (min-width: 1400px) {
+  .companies {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    margin-top: 85px;
+    margin-bottom: 85px;
+  }
+}
+
+.features {
+  border: 1px solid #D1D1D1;
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+}
+.features .container {
+  display: flex;
+}
+.features .container .content-left {
+  display: flex;
+  align-items: flex-start;
+}
+.features .container .content-left h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #F94D1C;
+}
+.features .container .content-left p {
+  font-family: "dm sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+}
+.features .container .content-left a {
+  padding: 10px;
+  text-align: center;
+}
+.features .container .content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.features .container .content-right i {
+  font-size: 40px;
+  padding-bottom: 35px;
+}
+.features .container .content-right h3 {
+  font-family: "dm sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
 }
