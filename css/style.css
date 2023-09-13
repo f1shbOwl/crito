@@ -240,13 +240,8 @@ header .container .menu .main-menu .btn-login {
 .features {
   border: 1.2px solid #D1D1D1;
   border-radius: 2px;
-  margin-left: 200px;
-  margin-right: 200px;
-  padding-top: 86px;
-  padding-bottom: 115px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  margin-left: 12rem;
+  margin-right: 12rem;
 }
 @media (max-width: 768px) {
   .features {
@@ -254,11 +249,12 @@ header .container .menu .main-menu .btn-login {
   }
 }
 .features .container {
+  padding-left: 2rem;
+  padding-top: 5rem;
   display: flex;
   gap: 70px;
 }
 .features .container .content-left {
-  padding-left: 100px;
   flex: 1;
   display: flex;
   gap: 70px;
@@ -291,9 +287,10 @@ header .container .menu .main-menu .btn-login {
 .features .container .content-right {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 90px;
-  padding-right: 150px;
-  padding-top: 35px;
+  gap: 50px;
+  padding-bottom: 116px;
+  padding-right: 200px;
+  padding-top: 40px;
 }
 @media (max-width: 1200px) {
   .features .container .content-right {
@@ -314,10 +311,53 @@ header .container .menu .main-menu .btn-login {
   font-size: 22px;
   font-weight: 700;
 }
-.features .container .content-right div p {
+.features .container .content-right div .lorem {
   max-width: 220px;
 }
 
-.about {
-  padding-top: 120px;
+.about-company {
+  margin-top: 120px;
+}
+.about-company .container {
+  display: flex;
+  justify-content: space-between;
+}
+.about-company .container .column-left {
+  position: relative;
+}
+.about-company .container .column-left .founder-textbox {
+  position: absolute;
+  left: -50px;
+  top: 400px;
+  background-color: #f0f0f0;
+  padding: 40px;
+  max-width: 368px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px rgba(44, 44, 44, 0.15);
+  background-color: #BEEBFF;
+  text-align: left;
+}
+.about-company .container .column-left .founder-textbox h3 {
+  font-family: "DM Sans, Sans Serif";
+  font-size: 20px;
+  font-weight: 700;
+}
+.about-company .container .column-left .founder-textbox span {
+  font-family: "DM Sans, Sans Serif";
+  font-size: 16px;
+  font-weight: 700;
+  color: #F94D1C;
+}
+.about-company .container .column-right {
+  flex: 1;
+  margin-left: 250px;
+}
+.about-company .container .column-right h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #F94D1C;
+}
+.about-company .container .column-right .about {
+  font-size: 45px;
+  font-weight: 700;
 }

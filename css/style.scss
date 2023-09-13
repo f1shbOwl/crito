@@ -278,29 +278,30 @@ header {
 .features {
     border: 1.2px solid #D1D1D1;
     border-radius: 2px;
-    margin-left: 200px;
-    margin-right: 200px;
-    padding-top: 86px;
-    padding-bottom: 115px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    // justify-content: space-between;
+    // align-items: flex-start;
+    
 
     @media (max-width: 768px) {
         border: none;
     }
 
     .container  {
+        // border: 1.2px solid #D1D1D1;
+        // border-radius: 2px;
+        padding-left: 2rem;
+        padding-top: 5rem;
         display: flex;
         gap: 70px;
         
         .content-left {
-            padding-left: 100px;
-            // padding-top: 87px;
             flex: 1;
             display: flex;
             gap: 70px;
             flex-direction: column;
+            // margin-right: 57px;
             
             h2 {
             font-size: 18px;
@@ -340,13 +341,12 @@ header {
 
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 90px;
-            padding-right: 150px;
-            padding-top: 35px;
-            // margin-right: 150px;
-            // margin-top: 35px;
+            gap: 50px;
+            padding-bottom: 116px;
+            padding-right: 200px;
+            padding-top: 40px;
+            // margin-left: -150px;
 
-            
 
             div {
                 display: flex;
@@ -365,7 +365,7 @@ header {
                 font-weight: 700;
                 }
 
-                p {
+                .lorem {
                     max-width: 220px;
                 }
             }
@@ -373,6 +373,64 @@ header {
     }
 }
 
-.about {
-    padding-top: 120px;
+.about-company {
+    margin-top: 120px;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+    
+        .column-left {
+            position: relative;
+            
+    
+            .founder-textbox {
+                position: absolute;
+                left: -50px;
+                top: 400px;
+                background-color: #f0f0f0;
+                padding: 40px;
+                max-width: 368px;
+                box-sizing: border-box;
+                box-shadow: 5px 5px 10px rgba(44, 44, 44, 0.15);               
+                background-color: #BEEBFF;
+                text-align: left;
+                
+
+                h3 {
+                    font-family: 'DM Sans, Sans Serif';
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+
+                span {
+                    font-family: 'DM Sans, Sans Serif';
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #F94D1C;          
+                }
+
+                p {
+
+                }
+
+            }
+        }
+    
+        .column-right {
+            flex: 1;
+            margin-left: 250px;
+
+            h2 {
+                font-size: 18px;
+                font-weight: 400;
+                color: #F94D1C;
+            }
+
+            .about {
+                font-size: 45px;
+                font-weight: 700;
+            }
+        }
+    }
 }
