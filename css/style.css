@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&family=Inter:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&display=swap");
 html, body {
   color: #191919;
   font-family: "inter", sans-serif;
@@ -73,12 +73,14 @@ html, body {
   border: 1px solid #191919;
   color: #191919;
   text-decoration: none;
-  padding: 15px 30px;
   font-weight: 600;
   border-radius: 50%;
   font-size: 16px;
   width: 56px;
   height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn-round i {
   margin-left: 8px;
@@ -88,6 +90,12 @@ html, body {
   background-color: #191919;
   border: 1px solid #191919;
   color: #F0EFE9;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -286,11 +294,6 @@ header .container .menu .main-menu .btn-login {
   margin-left: 12rem;
   margin-right: 12rem;
 }
-@media (max-width: 768px) {
-  .features {
-    border: none;
-  }
-}
 .features .container {
   padding-left: 2rem;
   padding-top: 5rem;
@@ -309,17 +312,11 @@ header .container .menu .main-menu .btn-login {
   color: #F94D1C;
 }
 .features .container .content-left p {
-  font-family: "dm sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 45px;
   font-weight: 700;
   max-width: 500px;
   margin-top: -42px;
-}
-@media (max-width: 768px) {
-  .features .container .content-left p {
-    display: flex;
-    font-size: 24px;
-  }
 }
 .features .container .content-left a {
   padding: 10px;
@@ -335,11 +332,6 @@ header .container .menu .main-menu .btn-login {
   padding-right: 200px;
   padding-top: 40px;
 }
-@media (max-width: 1200px) {
-  .features .container .content-right {
-    display: none;
-  }
-}
 .features .container .content-right div {
   display: flex;
   flex-direction: column;
@@ -350,7 +342,7 @@ header .container .menu .main-menu .btn-login {
   padding-bottom: 20px;
 }
 .features .container .content-right div h3 {
-  font-family: "dm sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
 }
@@ -360,6 +352,7 @@ header .container .menu .main-menu .btn-login {
 
 .about-company {
   margin-top: 120px;
+  padding-bottom: 8rem;
 }
 .about-company .container {
   display: flex;
@@ -381,12 +374,12 @@ header .container .menu .main-menu .btn-login {
   text-align: left;
 }
 .about-company .container .column-left .founder-textbox h3 {
-  font-family: "DM Sans, Sans Serif";
+  font-family: "DM Sans", sans-Serif;
   font-size: 20px;
   font-weight: 700;
 }
 .about-company .container .column-left .founder-textbox span {
-  font-family: "DM Sans, Sans Serif";
+  font-family: "DM Sans", sans-Serif;
   font-size: 16px;
   font-weight: 700;
   color: #F94D1C;
@@ -404,55 +397,97 @@ header .container .menu .main-menu .btn-login {
   font-size: 45px;
   font-weight: 700;
 }
-.about-company .container .column-right .btn-black {
-  display: inline flex;
-  justify-content: center;
+.about-company .container .column-right .buttons {
+  display: flex;
   align-items: center;
-  margin-top: 120px;
-  margin-right: 40px;
+  padding-top: 8rem;
+}
+.about-company .container .column-right .btn-black {
+  margin-right: 2rem;
 }
 .about-company .container .column-right .btn-round {
-  margin-right: 20px;
-  display: inline flex;
+  margin-right: 1rem;
   justify-content: center;
   align-items: center;
 }
 .about-company .container .column-right span {
   font-size: 16px;
-  font-family: "inter, sans-serif";
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .our-services {
   background-color: #F0EFE9;
-  margin-top: 250px;
+  background-image: url("/assets/lines-reversed.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 102%;
+  width: 100%;
+}
+.our-services .container {
+  padding-bottom: 6rem;
+}
+.our-services .container .center-content {
+  margin-top: 3rem;
 }
 .our-services .container .services-text {
-  text-align: left;
+  max-width: 30rem;
+  line-height: 3.5rem;
 }
 .our-services .container .services-text h2 {
+  padding-top: 8rem;
   font-size: 18px;
   font-weight: 400;
   color: #F94D1C;
 }
 .our-services .container .services-text p {
+  padding-top: 1rem;
   font-size: 45px;
-  font-family: "DM Sans, sans-serif";
-  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
 }
 .our-services .container .services-boxes {
   display: flex;
-  justify-content: space-between;
+  gap: 2rem;
 }
 .our-services .container .services-boxes .box {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
   background-color: #FFFFFF;
   padding: 20px;
-  text-align: center;
-  margin: 10px;
+  margin-top: 10px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
-.our-services .container .services-boxes h3 {
-  font-family: "dm sans", sans-serif;
+.our-services .container .services-boxes .box:hover {
+  background-color: #F9D783;
+}
+.our-services .container .services-boxes .box h3 {
+  white-space: nowrap;
+  border-top: 1.5px solid #191919;
+  padding-top: 2rem;
+  width: 39px;
+  font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
+}
+.our-services .container .services-boxes .box .btn-round {
+  background-color: #191919;
+  margin-top: auto;
+  align-self: flex-end;
+}
+.our-services .container .services-boxes .box .btn-round:hover {
+  background-color: #FFFFFF;
+  border: #FFFFFF;
+  color: #191919;
+}
+.our-services .container .services-boxes .box .btn-round:hover i {
+  color: #191919;
+}
+.our-services .container .services-boxes .box a {
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+.our-services .container .services-boxes .box i {
+  color: #FFFFFF;
+  margin-right: 0.5rem;
 }
