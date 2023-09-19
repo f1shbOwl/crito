@@ -606,3 +606,36 @@ header .container .menu .main-menu .btn-login {
 .project-and-cases .container .btn-black {
   margin-top: 5rem;
 }
+
+.meet-our-team {
+  padding-top: 5rem;
+  background-color: #F0D082;
+}
+.meet-our-team .container .section-title {
+  margin-bottom: 5rem;
+}
+.meet-our-team .container h2 {
+  display: flex;
+  justify-content: space-between;
+}
+.meet-our-team .container a {
+  border: 1px solid #191919;
+  width: 220px;
+  text-align: center;
+}
+.meet-our-team .container .team {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+.meet-our-team .container h3 {
+  font-family: "DM Sans" sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.meet-our-team .container .center-content {
+  margin-top: 2rem;
+  gap: 1rem;
+  padding-bottom: 5rem;
+}
