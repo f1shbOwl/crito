@@ -96,6 +96,20 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 90px;
+}
+
+.section-title p {
+  color: #F94D1C;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+.section-title h2 {
+  color: #191919;
+  font-family: "DM Sans, sans-serif";
+  font-size: 45px;
+  font-weight: 700;
 }
 
 header {
@@ -423,7 +437,7 @@ header .container .menu .main-menu .btn-login {
   width: 100%;
 }
 .our-services .container {
-  padding-bottom: 6rem;
+  padding-bottom: 2rem;
 }
 .our-services .container .center-content {
   margin-top: 3rem;
@@ -557,4 +571,38 @@ header .container .menu .main-menu .btn-login {
 }
 .why-choose-us .container .content-right .img {
   position: relative;
+}
+
+.project-and-cases .container .section-title {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.project-and-cases .container .projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .project-and-cases .container .projects {
+    grid-template-columns: 1fr;
+  }
+}
+.project-and-cases .container .projects h3 {
+  font-family: "DM Sans" sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #E7E7E7;
+}
+.project-and-cases .container .projects a {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #191919;
+  font-size: 14px;
+  margin-top: 2rem;
+}
+.project-and-cases .container .btn-black {
+  margin-top: 5rem;
 }

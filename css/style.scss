@@ -116,6 +116,24 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 90px;
+    
+}
+
+.section-title {
+    p {
+        color: #F94D1C;
+        font-size: 18px;
+        margin-bottom: 5px;
+        font-weight: 400;
+    }
+
+    h2 {
+        color: #191919;
+        font-family: 'DM Sans, sans-serif';
+        font-size: 45px;
+        font-weight: 700;
+    }
 }
 
 header {
@@ -535,7 +553,7 @@ header {
 
 
     .container {
-        padding-bottom:  6rem;
+        padding-bottom:  2rem;
 
         .center-content {
             margin-top: 3rem;
@@ -717,4 +735,54 @@ header {
             }
         }
     }
+}
+
+.project-and-cases {
+
+    .container {
+        
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 5rem;
+        }  
+        
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+
+            @media  (max-width: 768px) {
+                grid-template-columns: 1fr;
+                
+            }
+            
+
+            h3 {
+                font-family: 'DM Sans' sans-serif;
+                font-size: 22px;
+                font-weight: 700;
+                margin-top: 1rem;
+                padding-bottom: 1rem;
+                border-bottom: 1px solid #E7E7E7;
+            }
+
+            a {
+                display: block;
+                text-align: right;
+                text-decoration: none;
+                color: #191919;
+                font-size: 14px;
+                margin-top: 2rem;
+            }
+        }
+
+        .btn-black {
+            margin-top: 5rem;
+        }
+    }
+}
+
+.meet-our-team {
+    
 }
