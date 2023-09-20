@@ -644,7 +644,7 @@ header .container .menu .main-menu .btn-login {
 
 .testimonial {
   background-color: #F0D082;
-  padding-bottom: 5rem;
+  padding-bottom: 8rem;
 }
 .testimonial .container {
   padding: 5rem;
@@ -655,22 +655,43 @@ header .container .menu .main-menu .btn-login {
   text-align: center;
   margin-bottom: 5rem;
 }
-.testimonial .container .cards {
+.testimonial .container .cards-text {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-flow: dense;
+  margin-left: 3rem;
   gap: 2rem;
 }
-.testimonial .container .cards h3 {
+.testimonial .container .cards-text p {
+  margin-top: 1rem;
+  max-width: 300px;
+}
+.testimonial .container .card-names-container {
+  display: flex;
+  padding-top: 2rem;
+}
+.testimonial .container .card-names-container .card-names {
+  display: flex;
+  justify-content: space-around;
+}
+.testimonial .container .card-names-container .card-names img {
+  margin-left: 3rem;
+}
+.testimonial .container .card-names-container .card-names div {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.testimonial .container .card-names-container .card-names div h3 {
+  margin: 0;
   font-family: "DM Sans" sans-serif;
   font-size: 22px;
   font-weight: 700;
 }
-.testimonial .container .cards span {
+.testimonial .container .card-names-container .card-names div span {
+  text-align: center;
   color: #F94D1C;
-}
-.testimonial .container .cards img {
-  display: inline-block;
 }
 .testimonial .container .btn-black {
   margin-top: 5rem;
