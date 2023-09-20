@@ -130,7 +130,7 @@ html, body {
 
     h2 {
         color: #191919;
-        font-family: 'DM Sans, sans-serif';
+        font-family: 'DM Sans', sans-serif;
         font-size: 45px;
         font-weight: 700;
     }
@@ -749,7 +749,7 @@ header {
             
 
             h3 {
-                font-family: 'DM Sans' sans-serif;
+                font-family: 'DM Sans', sans-serif;
                 font-size: 22px;
                 font-weight: 700;
                 margin-top: 1rem;
@@ -806,7 +806,7 @@ header {
         }
 
         h3 {
-            font-family: 'DM Sans' sans-serif;
+            font-family: 'DM Sans', sans-serif;
             font-size: 22px;
             font-weight: 700;
             margin-top: 1rem;
@@ -903,7 +903,7 @@ header {
 }
 
 .article-and-news {
-    
+    padding-top: 6rem;
 
     .container {
 
@@ -913,6 +913,7 @@ header {
            h2 {
             display: flex;
             justify-content: space-between;
+            font-family: 'DM Sans', sans-serif;
             
            }
             
@@ -920,20 +921,16 @@ header {
 
 
         .article-grid {
-            padding-top: 5rem;
+            padding-top: 2rem;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;  
             gap: 1rem;
-
-            p {
-
-            }
+            
 
             h3 {
                 font-family: 'DM Sans', sans-serif;
                 font-size: 22px;
                 font-weight: 700;
-                text-align: left;
                 max-width: 310px;
             }
         }
@@ -942,8 +939,54 @@ header {
     
     
     .center-content {
-        margin-top: 2rem;
+        margin-top: 3rem;
         gap: 1rem;
-        padding-bottom: 5rem;
+        padding-bottom: 6rem;
+    }
+}
+
+.newsletter {
+    background-color: #F0EFE9;
+    background-image: url(/assets/news-lines.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 70%;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+
+        .section-title {
+
+            h2 {
+                font-family: 'DM Sans', sans-serif;
+                font-size: 45px;
+                font-weight: 700;
+            }
+        }
+
+        form {
+
+            input {
+
+                padding: 15px 60px;
+                border-radius: 25px;
+                outline: none;
+                border: none;
+                margin-right: 1rem;
+
+            }
+
+            a {
+                margin-right: 2.5rem;
+                
+            }
+            
+        }
+
     }
 }
