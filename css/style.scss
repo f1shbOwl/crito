@@ -901,3 +901,49 @@ header {
     }
     
 }
+
+.article-and-news {
+    
+
+    .container {
+
+
+        .section-title {
+            
+           h2 {
+            display: flex;
+            justify-content: space-between;
+            
+           }
+            
+        }
+
+
+        .article-grid {
+            padding-top: 5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;  
+            gap: 1rem;
+
+            p {
+
+            }
+
+            h3 {
+                font-family: 'DM Sans', sans-serif;
+                font-size: 22px;
+                font-weight: 700;
+                text-align: left;
+                max-width: 310px;
+            }
+        }
+
+    }
+    
+    
+    .center-content {
+        margin-top: 2rem;
+        gap: 1rem;
+        padding-bottom: 5rem;
+    }
+}

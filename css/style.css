@@ -696,3 +696,26 @@ header .container .menu .main-menu .btn-login {
 .testimonial .container .btn-black {
   margin-top: 5rem;
 }
+
+.article-and-news .container .section-title h2 {
+  display: flex;
+  justify-content: space-between;
+}
+.article-and-news .container .article-grid {
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.article-and-news .container .article-grid h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: left;
+  max-width: 310px;
+}
+.article-and-news .center-content {
+  margin-top: 2rem;
+  gap: 1rem;
+  padding-bottom: 5rem;
+}
