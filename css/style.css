@@ -751,3 +751,65 @@ header .container .menu .main-menu .btn-login {
 .newsletter .container form a {
   margin-right: 2.5rem;
 }
+
+.footer {
+  background-color: #0E1021;
+  padding-top: 6rem;
+  background-image: url(/assets/footer-lines.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 78%;
+}
+.footer .container {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+}
+.footer .container .footer-logo p {
+  margin-top: 1.5rem;
+  color: #B6B6BC;
+}
+.footer .container .column {
+  margin-top: 1.5rem;
+  display: grid;
+  color: #FFFFFF;
+  padding-bottom: 6rem;
+}
+.footer .container .column a {
+  margin-top: 0.5rem;
+  line-height: 30px;
+  text-decoration: none;
+  color: #B6B6BC;
+}
+.footer .container .column a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+.footer .container .column h3 {
+  margin-bottom: 1.5rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+.footer .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #3E404D;
+}
+.footer .footer-bottom .copyright {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 300px;
+  color: #B6B6BC;
+}
+.footer .footer-bottom .social-media {
+  padding-top: 2rem;
+  padding-right: 300px;
+}
+.footer .footer-bottom .social-media a {
+  margin-left: 1rem;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer .footer-bottom .social-media a:hover {
+  color: rgb(218, 16, 167);
+}
