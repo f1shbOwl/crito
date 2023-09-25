@@ -223,6 +223,11 @@ header .container .menu .main-menu .btn-login {
   background-repeat: no-repeat;
   background-position: -2% 102%;
 }
+@media (max-width: 576px) {
+  .showcase {
+    background-image: none;
+  }
+}
 .showcase .container {
   display: flex;
   justify-content: space-between;
@@ -278,6 +283,12 @@ header .container .menu .main-menu .btn-login {
     margin-right: 10px;
   }
 }
+@media (max-width: 576px) {
+  .showcase .container .content a {
+    width: 250px;
+    margin-left: 3.5rem;
+  }
+}
 .showcase .container img {
   margin-right: -50px;
   display: none;
@@ -300,12 +311,25 @@ header .container .menu .main-menu .btn-login {
     margin-bottom: 85px;
   }
 }
+@media (max-width: 576px) {
+  .companies {
+    display: flex;
+    margin-left: 4rem;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+}
 
 .features {
   border: 1.2px solid #D1D1D1;
   border-radius: 2px;
   margin-left: 12rem;
   margin-right: 12rem;
+}
+@media (max-width: 576px) {
+  .features {
+    border: none;
+  }
 }
 .features .container {
   padding-left: 2rem;
@@ -316,26 +340,25 @@ header .container .menu .main-menu .btn-login {
 .features .container .content-left {
   flex: 1;
   display: flex;
-  gap: 70px;
   flex-direction: column;
 }
-.features .container .content-left h2 {
+.features .container .content-left p {
   font-size: 18px;
   font-weight: 400;
   color: #F94D1C;
+  margin-bottom: 37px;
 }
-.features .container .content-left p {
+.features .container .content-left h2 {
   font-family: "DM Sans", sans-serif;
   font-size: 45px;
   font-weight: 700;
-  max-width: 500px;
-  margin-top: -42px;
+  max-width: 450px;
+  margin-bottom: 37px;
 }
 .features .container .content-left a {
   padding: 10px;
   text-align: center;
   max-width: 400px;
-  margin-top: -50px;
 }
 .features .container .content-right {
   display: grid;
@@ -362,17 +385,62 @@ header .container .menu .main-menu .btn-login {
 .features .container .content-right div .lorem {
   max-width: 220px;
 }
+@media (max-width: 576px) {
+  .features {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .features .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    text-align: center;
+  }
+  .features .container .content-left {
+    text-align: left;
+  }
+  .features .container .content-left p {
+    font-size: 20px;
+  }
+  .features .container .content-left a {
+    display: inline-block;
+    max-width: 250px;
+    margin-left: 3.5rem;
+  }
+}
 
 .about-company {
   margin-top: 120px;
-  padding-bottom: 8rem;
+  padding-bottom: 6rem;
 }
 .about-company .container {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 576px) {
+  .about-company .container {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+  }
+}
 .about-company .container .column-left {
   position: relative;
+}
+@media (max-width: 576px) {
+  .about-company .container .column-left {
+    padding: 0;
+    margin: 0;
+  }
+  .about-company .container .column-left img {
+    display: none;
+  }
 }
 .about-company .container .column-left .founder-textbox {
   position: absolute;
@@ -385,6 +453,11 @@ header .container .menu .main-menu .btn-login {
   box-shadow: 5px 5px 10px rgba(44, 44, 44, 0.15);
   background-color: #BEEBFF;
   text-align: left;
+}
+@media (max-width: 576px) {
+  .about-company .container .column-left .founder-textbox {
+    display: none;
+  }
 }
 .about-company .container .column-left .founder-textbox h3 {
   font-family: "DM Sans", sans-Serif;
@@ -401,19 +474,46 @@ header .container .menu .main-menu .btn-login {
   flex: 1;
   margin-left: 250px;
 }
-.about-company .container .column-right h2 {
-  font-size: 18px;
-  font-weight: 400;
-  color: #F94D1C;
+@media (max-width: 576px) {
+  .about-company .container .column-right {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+  }
+}
+.about-company .container .column-right .section-title p {
+  margin-bottom: 37px;
+}
+.about-company .container .column-right .section-title h2 {
+  margin-bottom: 37px;
+}
+.about-company .container .column-right .section-title div p {
+  color: #191919;
+  font-family: "inter", sans-serif;
+  font-size: 16px;
 }
 .about-company .container .column-right .about {
   font-size: 45px;
   font-weight: 700;
 }
+@media (max-width: 576px) {
+  .about-company .container .column-right .about {
+    font-size: 24px;
+  }
+}
 .about-company .container .column-right .buttons {
   display: flex;
   align-items: center;
-  padding-top: 8rem;
+  margin-top: 8rem;
+}
+@media (max-width: 576px) {
+  .about-company .container .column-right .buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
 }
 .about-company .container .column-right .btn-black {
   margin-right: 2rem;
@@ -433,29 +533,22 @@ header .container .menu .main-menu .btn-login {
   background-image: url("/assets/lines-reversed.svg");
   background-repeat: no-repeat;
   background-position: 100% 102%;
-  width: 100%;
 }
 .our-services .container {
-  padding-bottom: 2rem;
+  padding-top: 6rem;
 }
 .our-services .container .center-content {
   margin-top: 3rem;
+  padding-bottom: 6rem;
 }
-.our-services .container .services-text {
+.our-services .container .section-title {
   max-width: 30rem;
-  line-height: 3.5rem;
 }
-.our-services .container .services-text h2 {
-  padding-top: 8rem;
-  font-size: 18px;
-  font-weight: 400;
-  color: #F94D1C;
+.our-services .container .section-title p {
+  margin-bottom: 37px;
 }
-.our-services .container .services-text p {
-  padding-top: 1rem;
-  font-size: 45px;
-  font-family: "DM Sans", sans-serif;
-  font-weight: 700;
+.our-services .container .section-title h2 {
+  margin-bottom: 37px;
 }
 .our-services .container .services-boxes {
   display: flex;
@@ -506,8 +599,8 @@ header .container .menu .main-menu .btn-login {
 }
 
 .why-choose-us {
-  padding-top: 5rem;
-  padding-bottom: 10rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 .why-choose-us .container {
   display: flex;
@@ -519,6 +612,7 @@ header .container .menu .main-menu .btn-login {
   font-weight: 400;
 }
 .why-choose-us .container .content-left h2 {
+  margin-top: 37px;
   font-family: "DM Sans", sans-serif;
   font-size: 45px;
   font-weight: 700;
@@ -530,7 +624,7 @@ header .container .menu .main-menu .btn-login {
   margin-top: 2rem;
 }
 .why-choose-us .container .content-left .icon-group .icon {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .why-choose-us .container .content-left .icon-group .icon img {
   border: 1px solid #E7E7E7;
@@ -559,9 +653,14 @@ header .container .menu .main-menu .btn-login {
   position: relative;
   margin-top: 2rem;
 }
+@media (max-width: 576px) {
+  .why-choose-us .container .content-right {
+    display: none;
+  }
+}
 .why-choose-us .container .content-right .background-box {
   position: absolute;
-  width: calc(135% + 200px);
+  width: calc(128% + 200px);
   height: 425px;
   background-color: #F0EFE9;
   top: 10rem;
@@ -576,10 +675,21 @@ header .container .menu .main-menu .btn-login {
   text-align: center;
   margin-bottom: 5rem;
 }
+.project-and-cases .container .section-title h2 {
+  margin-top: 37px;
+}
 .project-and-cases .container .projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+}
+.project-and-cases .container .projects .article {
+  color: #191919;
+  text-decoration: none;
+}
+.project-and-cases .container .projects .article:hover div {
+  text-decoration: underline;
+  font-weight: 700;
 }
 @media (max-width: 768px) {
   .project-and-cases .container .projects {
@@ -594,29 +704,30 @@ header .container .menu .main-menu .btn-login {
   padding-bottom: 1rem;
   border-bottom: 1px solid #E7E7E7;
 }
-.project-and-cases .container .projects a {
+.project-and-cases .container .projects div {
   display: block;
   text-align: right;
   text-decoration: none;
   color: #191919;
   font-size: 14px;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .project-and-cases .container .btn-black {
   margin-top: 5rem;
 }
 .project-and-cases .container .center-content {
-  padding-bottom: 5rem;
+  padding-bottom: 6rem;
 }
 
 .meet-our-team {
-  padding-top: 5rem;
+  padding-top: 6rem;
   background-color: #F0D082;
 }
 .meet-our-team .container .section-title {
   margin-bottom: 5rem;
 }
 .meet-our-team .container h2 {
+  margin-top: 37px;
   display: flex;
   justify-content: space-between;
 }
@@ -639,12 +750,12 @@ header .container .menu .main-menu .btn-login {
 .meet-our-team .container .center-content {
   margin-top: 2rem;
   gap: 1rem;
-  padding-bottom: 5rem;
+  padding-bottom: 6rem;
 }
 
 .testimonial {
   background-color: #F0D082;
-  padding-bottom: 8rem;
+  padding-bottom: 6rem;
 }
 .testimonial .container {
   padding: 5rem;
@@ -653,7 +764,10 @@ header .container .menu .main-menu .btn-login {
 }
 .testimonial .container .section-title {
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
+}
+.testimonial .container .section-title h2 {
+  margin-top: 37px;
 }
 .testimonial .container .cards-text {
   display: grid;
@@ -704,12 +818,21 @@ header .container .menu .main-menu .btn-login {
   display: flex;
   justify-content: space-between;
   font-family: "DM Sans", sans-serif;
+  margin-top: 37px;
 }
 .article-and-news .container .article-grid {
   padding-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
+}
+.article-and-news .container .article-grid .article {
+  color: #191919;
+  text-decoration: none;
+}
+.article-and-news .container .article-grid .article:hover {
+  text-decoration: underline;
+  font-weight: 700;
 }
 .article-and-news .container .article-grid h3 {
   font-family: "DM Sans", sans-serif;
