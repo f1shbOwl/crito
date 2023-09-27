@@ -6,6 +6,7 @@ html, body {
     font-family: 'inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    overflow-x: hidden;
     
     
 }
@@ -382,7 +383,7 @@ header {
     margin-left: 12rem;
     margin-right: 12rem;
 
-    @media (max-width: 576px) {
+    @media (max-width: 1200px) {
         border: none;
         border-top: 1px solid #D1D1D1;
     }
@@ -1295,10 +1296,41 @@ header {
 .article-and-news {
     padding-top: 6rem;
 
+    @media (max-width: 576px) {
+        border-top: 1px solid #D1D1D1;
+        padding-top: 2rem;
+        
+    }
+
     .container {
 
 
+
         .section-title {
+
+            @media (max-width: 576px) {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin-bottom: 2rem;
+                
+                
+
+                h2 {
+                    display: flex;
+                    font-size: 30px;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                }
+
+                a {
+                    margin-top: 2rem;
+                }
+
+
+
+            }
 
             
            h2 {
@@ -1319,6 +1351,15 @@ header {
             grid-template-columns: 1fr 1fr 1fr;  
             gap: 1rem;
 
+            @media (max-width: 576px) {
+                display: grid;
+                grid-template-columns: 1fr;
+
+                
+                
+                
+            }
+
             .article {
                 color: #191919;
                 text-decoration: none;
@@ -1326,6 +1367,13 @@ header {
                 &:hover {
                     text-decoration: underline;
                     font-weight: 700;
+                }
+
+                @media (max-width: 576px) {
+                    
+                    img {
+                        width: 100%;
+                    }
                 }
                
             }
@@ -1336,6 +1384,10 @@ header {
                 font-size: 22px;
                 font-weight: 700;
                 max-width: 310px;
+
+                @media (max-width: 576px) {
+                    font-size: 20px;
+                }
             }
         }
 
@@ -1346,6 +1398,10 @@ header {
             margin-top: 2rem;
             padding-bottom: 6rem;
             text-align: center;
+
+            @media (max-width: 576px) {
+                padding-bottom: 2rem;
+            }
             
 
             a {
@@ -1380,10 +1436,25 @@ header {
     padding-top: 6rem;
     padding-bottom: 6rem;
 
+    
+
+    @media (max-width: 576px) {
+        border-top: 1px solid #D1D1D1;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        background-image: none;
+    }
+
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: 576px) {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
         
         
 
@@ -1393,10 +1464,25 @@ header {
                 font-family: 'DM Sans', sans-serif;
                 font-size: 45px;
                 font-weight: 700;
+
+                @media (max-width: 576px) {
+                    font-size: 30px;
+                }
             }
+
+            
         }
 
         form {
+
+            @media (max-width: 576px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+
+            }
+
 
             input {
 
@@ -1406,10 +1492,23 @@ header {
                 border: none;
                 margin-right: 1rem;
 
+                @media (max-width: 576px) {
+                    margin: 0;
+                    margin-top: 1rem;
+                    text-align: center;
+                }
+
             }
 
             a {
                 margin-right: 2.5rem;
+
+                @media (max-width: 576px) {
+                    display: inline block;
+                    margin: 0;
+                    margin-top: 1rem;
+                    align-items: center;
+                }
                 
             }
             
@@ -1424,6 +1523,12 @@ header {
     background-image: url(/assets/footer-lines.svg);
     background-repeat: no-repeat;
     background-position: 100% 78%;
+
+    @media (max-width: 576px) {
+        border-top: 1px solid #D1D1D1;
+        padding-top: 2rem;
+        background-image: none;
+    }
     
     
 
@@ -1431,6 +1536,14 @@ header {
         display: grid;
         gap: 5rem;
         grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+
+        @media (max-width: 576px) {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            text-align: center;
+
+        }
         
         
        
@@ -1449,6 +1562,13 @@ header {
             display: grid;
             color: #FFFFFF;
             padding-bottom: 6rem;
+
+            @media (max-width: 576px) {
+                margin: 0;
+                padding: 0;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
             
             
 
@@ -1470,6 +1590,11 @@ header {
                 font-family: 'DM Sans', sans-serif;
                 font-size: 22px;
                 font-weight: 700;
+
+                @media (max-width: 576px) {
+                    margin: 0;
+                    font-size: 20px;
+                }
             }
 
 
@@ -1481,11 +1606,26 @@ header {
         justify-content: space-between;
         border-top: 1px solid #3E404D;
 
+        @media (max-width: 576px) {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+
         .copyright {
             padding-top: 2rem;
             padding-bottom: 1rem;
             padding-left: 300px;
             color: #B6B6BC;
+
+            @media (max-width: 576px) {
+                padding: 0;
+                margin-top: 1rem;
+                text-align: center;
+                font-size: 12px;
+                
+            }
         }
 
         .social-media {
@@ -1501,6 +1641,16 @@ header {
                 &:hover {
                     color: rgb(218, 16, 167);
                 }
+            }
+
+            @media (max-width: 576px) {
+                display: inline-block;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                margin-bottom: 2rem;
+                
+                
             }
         }
     }

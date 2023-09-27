@@ -5,6 +5,7 @@ html, body {
   font-family: "inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 .btn-yellow {
@@ -326,7 +327,7 @@ header .container .menu .main-menu .btn-login {
   margin-left: 12rem;
   margin-right: 12rem;
 }
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
   .features {
     border: none;
     border-top: 1px solid #D1D1D1;
@@ -1058,6 +1059,29 @@ header .container .menu .main-menu .btn-login {
 .article-and-news {
   padding-top: 6rem;
 }
+@media (max-width: 576px) {
+  .article-and-news {
+    border-top: 1px solid #D1D1D1;
+    padding-top: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .article-and-news .container .section-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .article-and-news .container .section-title h2 {
+    display: flex;
+    font-size: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .article-and-news .container .section-title a {
+    margin-top: 2rem;
+  }
+}
 .article-and-news .container .section-title h2 {
   display: flex;
   justify-content: space-between;
@@ -1070,6 +1094,12 @@ header .container .menu .main-menu .btn-login {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
 }
+@media (max-width: 576px) {
+  .article-and-news .container .article-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 .article-and-news .container .article-grid .article {
   color: #191919;
   text-decoration: none;
@@ -1078,16 +1108,31 @@ header .container .menu .main-menu .btn-login {
   text-decoration: underline;
   font-weight: 700;
 }
+@media (max-width: 576px) {
+  .article-and-news .container .article-grid .article img {
+    width: 100%;
+  }
+}
 .article-and-news .container .article-grid h3 {
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
   max-width: 310px;
 }
+@media (max-width: 576px) {
+  .article-and-news .container .article-grid h3 {
+    font-size: 20px;
+  }
+}
 .article-and-news .center-button {
   margin-top: 2rem;
   padding-bottom: 6rem;
   text-align: center;
+}
+@media (max-width: 576px) {
+  .article-and-news .center-button {
+    padding-bottom: 2rem;
+  }
 }
 .article-and-news .center-button a {
   border: none;
@@ -1115,15 +1160,43 @@ header .container .menu .main-menu .btn-login {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
+@media (max-width: 576px) {
+  .newsletter {
+    border-top: 1px solid #D1D1D1;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-image: none;
+  }
+}
 .newsletter .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 576px) {
+  .newsletter .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .newsletter .container .section-title h2 {
   font-family: "DM Sans", sans-serif;
   font-size: 45px;
   font-weight: 700;
+}
+@media (max-width: 576px) {
+  .newsletter .container .section-title h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .newsletter .container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
 }
 .newsletter .container form input {
   padding: 15px 60px;
@@ -1132,8 +1205,23 @@ header .container .menu .main-menu .btn-login {
   border: none;
   margin-right: 1rem;
 }
+@media (max-width: 576px) {
+  .newsletter .container form input {
+    margin: 0;
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
 .newsletter .container form a {
   margin-right: 2.5rem;
+}
+@media (max-width: 576px) {
+  .newsletter .container form a {
+    display: inline block;
+    margin: 0;
+    margin-top: 1rem;
+    align-items: center;
+  }
 }
 
 .footer {
@@ -1143,10 +1231,25 @@ header .container .menu .main-menu .btn-login {
   background-repeat: no-repeat;
   background-position: 100% 78%;
 }
+@media (max-width: 576px) {
+  .footer {
+    border-top: 1px solid #D1D1D1;
+    padding-top: 2rem;
+    background-image: none;
+  }
+}
 .footer .container {
   display: grid;
   gap: 5rem;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 576px) {
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+  }
 }
 .footer .container .footer-logo p {
   margin-top: 1.5rem;
@@ -1157,6 +1260,14 @@ header .container .menu .main-menu .btn-login {
   display: grid;
   color: #FFFFFF;
   padding-bottom: 6rem;
+}
+@media (max-width: 576px) {
+  .footer .container .column {
+    margin: 0;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 .footer .container .column a {
   margin-top: 0.5rem;
@@ -1174,16 +1285,36 @@ header .container .menu .main-menu .btn-login {
   font-size: 22px;
   font-weight: 700;
 }
+@media (max-width: 576px) {
+  .footer .container .column h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+}
 .footer .footer-bottom {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #3E404D;
+}
+@media (max-width: 576px) {
+  .footer .footer-bottom {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .footer .footer-bottom .copyright {
   padding-top: 2rem;
   padding-bottom: 1rem;
   padding-left: 300px;
   color: #B6B6BC;
+}
+@media (max-width: 576px) {
+  .footer .footer-bottom .copyright {
+    padding: 0;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 12px;
+  }
 }
 .footer .footer-bottom .social-media {
   padding-top: 2rem;
@@ -1196,4 +1327,13 @@ header .container .menu .main-menu .btn-login {
 }
 .footer .footer-bottom .social-media a:hover {
   color: rgb(218, 16, 167);
+}
+@media (max-width: 576px) {
+  .footer .footer-bottom .social-media {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
 }
