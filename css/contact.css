@@ -111,7 +111,7 @@
 @media (max-width: 576px) {
   .leave-message {
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0;
   }
 }
 .leave-message .container {
@@ -153,6 +153,7 @@
 @media (max-width: 576px) {
   .leave-message .container .btn-yellow {
     margin-top: 1rem;
+    font-size: 14px;
   }
 }
 .leave-message .container .form {
@@ -180,7 +181,9 @@
 }
 
 @media (max-width: 576px) {
-  .location-map {
-    display: none;
+  .location-map img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    zoom: 20%;
   }
 }

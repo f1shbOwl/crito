@@ -133,7 +133,7 @@
 
     @media (max-width: 576px) {
         padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding-bottom: 0;
     }
     
     
@@ -179,6 +179,7 @@
 
             @media (max-width: 576px) {
                 margin-top: 1rem;
+                font-size: 14px;
             }
             
         }
@@ -214,8 +215,13 @@
 }
 
 .location-map {
-
+    
     @media (max-width: 576px) {
-        display: none;
+
+        img {
+            object-fit: contain;
+            zoom: 20%;
+            
+        }
     }
 }
