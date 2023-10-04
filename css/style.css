@@ -334,11 +334,8 @@ header .container .menu .main-menu .btn-login {
   }
 }
 
-.clients {
-  display: none;
-}
 @media (min-width: 1400px) {
-  .clients {
+  .clients .client-logos {
     display: flex;
     justify-content: center;
     gap: 55px;
@@ -347,7 +344,7 @@ header .container .menu .main-menu .btn-login {
   }
 }
 @media (max-width: 576px) {
-  .clients {
+  .clients .client-logos {
     display: flex;
     margin-left: 5rem;
     flex-wrap: wrap;

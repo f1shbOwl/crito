@@ -400,22 +400,24 @@ header {
 }
 
 .clients {
-    display: none;
+    // display: none;
 
-    @media (min-width: 1400px) {
-        display: flex;
-        justify-content: center;
-        gap: 55px;
-        margin-top: 85px;
-        margin-bottom: 85px;
-    }
-
-    @media (max-width: 576px) {
-        display: flex;
-        margin-left: 5rem;
-        flex-wrap: wrap;
-        align-content: center;
-        
+    .client-logos {
+        @media (min-width: 1400px) {
+            display: flex;
+            justify-content: center;
+            gap: 55px;
+            margin-top: 85px;
+            margin-bottom: 85px;
+        }
+    
+        @media (max-width: 576px) {
+            display: flex;
+            margin-left: 5rem;
+            flex-wrap: wrap;
+            align-content: center;
+            
+        }
     }
 }
 
